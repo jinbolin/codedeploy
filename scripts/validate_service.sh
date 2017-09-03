@@ -3,7 +3,7 @@
 processesNum=`ps aux | grep SimpleHTTPServer | grep 8080 | grep -v grep | wc -l | sed 's/ //g'`
 ps aux | grep SimpleHTTPServer  | grep 8080 | grep -v grep
 echo process number is $processesNum
-if [ "$processesNum" == "1" ];then
+if [ "$processesNum" == "3" ];then
     echo app deployed successfully!
     exit 0
 else 
